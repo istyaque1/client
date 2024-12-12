@@ -6,7 +6,7 @@ import toast, { Toaster } from "react-hot-toast";
 const Short = () => {
   const [url, setUrl] = useState("");
   const [data, setData] = useState("");
-  const [loading, setLoading] = useState(false);
+  const [loading, setLoading] = useState(true);
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -17,7 +17,7 @@ const Short = () => {
         setData(
           `https://server-3pp3.onrender.com/${res?.data?.short?.shortCode}`
         );
-        setLoading(false);
+        setLoading(true);
       })
       .catch((err) => {
         toast.error(err?.response?.data?.message);
@@ -57,9 +57,7 @@ const Short = () => {
           </div>
         </div>
         {loading ? (
-          <h1 style={{ textAlign: "center" }}>
-            <div class="loader"></div>
-          </h1>
+          <div class="loader" style={{ textAlign: "center" }}></div>
         ) : (
           data && (
             <div className="short-container">
