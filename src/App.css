@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Figtree:ital,wght@0,300..900;1,300..900&family=Itim&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Overpass&family=Quicksand:wght@300..700&family=Varela+Round&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Nunito", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.navbar img{
+  height: 30px;
+  width: 30px;
+}
+
+.navbar{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  border-bottom: 1px solid #181c1413;
+}
+
+.short{
+  padding: 1rem;
+  text-align: center;
+  margin: 1rem auto;
+
+}
+
+.main-title{
+  text-align: center;
+  color: #181C14;
+  margin: 1rem 0;
+
+}
+
+.short-btn{
+  display: flex;
+  align-items: center;
+  background-color: #33ade6;
+  width: max-content;
+  padding: 10px 20px;
+  border-radius: 10px;
+  color: white;
+  margin: 0 auto;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.short-btn button{
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: white;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+
+input{
+  font-size: 1.2rem;
+  padding: 1rem 1.5rem;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  background-color: #EEEDEB;
+  margin: 1rem 0;
+  color: #181C14;
+}
+
+input::placeholder{
+  font-size: 1rem;
+}
+
+.content{
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.copy-btn{
+  margin-top: 1rem;
+}
+
+.copy-btn button{
+  background-color: #33ade6;
+  padding: 10px 20px;
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+  width: max-content;
+  border: none;
+  outline: none;
+  font-size: 1.1rem;
+}
+
+.link{
+  background-color: #EEEDEB;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin-top: 1rem;
+  display: inline-block;
+}
