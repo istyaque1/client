@@ -10,9 +10,9 @@ const Short = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     axios
-      .post("http://localhost:8080/short", { url })
+      .post("https://server-3pp3.onrender.com/short", { url })
       .then((res) => {
-        setData(`http://localhost:8080/${res?.data?.short?.shortCode}`);
+        setData(`https://server-3pp3.onrender.com/${res?.data?.short?.shortCode}`);
       })
       .catch((err) => {
         toast.error(err?.response?.data?.message);
