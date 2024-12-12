@@ -20,7 +20,12 @@ const Short = () => {
         setLoading(false);
       })
       .catch((err) => {
-        toast.error(err?.response?.data?.message);
+        if (err?.response?.data?.status === false) {
+          toast.error(err?.response?.data?.message);
+        } else {
+          toast.error("Too many request , please try again later");
+        }
+
         setLoading(false);
       });
   };
