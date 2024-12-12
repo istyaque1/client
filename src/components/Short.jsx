@@ -57,7 +57,9 @@ const Short = () => {
           </div>
         </div>
         {loading ? (
-          <div class="loader" style={{ textAlign: "center" }}></div>
+          <div className="loader-container">
+            <div class="loader"></div>
+          </div>
         ) : (
           data && (
             <div className="short-container">
