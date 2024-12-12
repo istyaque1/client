@@ -17,7 +17,7 @@ const Short = () => {
         setData(
           `https://server-3pp3.onrender.com/${res?.data?.short?.shortCode}`
         );
-        setLoading(true);
+        setLoading(false);
       })
       .catch((err) => {
         toast.error(err?.response?.data?.message);
