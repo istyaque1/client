@@ -56,7 +56,7 @@ const Short = () => {
             <button onClick={handleSubmit}>Shorten</button>
           </div>
         </div>
-        {loading ? "Loading..." : (
+        {loading ? <h1><div class="loader"></div></h1> : (
           data && (
             <div className="short-container">
               <p style={{ fontSize: "1.2rem" }}>Your short link is ready</p>
