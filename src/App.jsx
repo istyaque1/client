@@ -1,6 +1,6 @@
 import { useState } from "react";
 import "./App.css";
-import Short from "./components/short";
+import Short from "./components/Short";
 import Navbar from "./components/Navbar";
 
 function App() {
