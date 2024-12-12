@@ -14,14 +14,14 @@ const Short = () => {
     axios
       .post("https://server-3pp3.onrender.com/short", { url })
       .then((res) => {
-        setData(`https://server-3pp3.onrender.com/${res?.data?.short?.shortCode}`);
+        setData(
+          `https://server-3pp3.onrender.com/${res?.data?.short?.shortCode}`
+        );
         setLoading(false);
-
       })
       .catch((err) => {
         toast.error(err?.response?.data?.message);
         setLoading(false);
-
       });
   };
 
@@ -56,7 +56,11 @@ const Short = () => {
             <button onClick={handleSubmit}>Shorten</button>
           </div>
         </div>
-        {loading ? <h1><div class="loader"></div></h1> : (
+        {loading ? (
+          <h1 style={{ textAlign: "center" }}>
+            <div class="loader"></div>
+          </h1>
+        ) : (
           data && (
             <div className="short-container">
               <p style={{ fontSize: "1.2rem" }}>Your short link is ready</p>
