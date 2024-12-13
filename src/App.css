@@ -10,7 +10,7 @@ body {
   font-family: "Nunito", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
-  background-color: #ecebdea4;
+  background-color: #ffffff5d;
 }
 
 .navbar img {
@@ -41,7 +41,7 @@ body {
 .short-btn {
   display: flex;
   align-items: center;
-  background-color: #88d66c;
+  background-color: #6cc04d;
   width: max-content;
   padding: 10px 20px;
   border-radius: 10px;
