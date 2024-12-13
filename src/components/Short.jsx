@@ -13,10 +13,10 @@ const Short = () => {
     e.preventDefault();
     setLoading(true);
     axios
-      .post(`${import.meta.env.VITE_LOCAL_URL}/short`, { url })
+      .post(`${import.meta.env.VITE_RENDER_URL}/short`, { url })
       .then((res) => {
         setData(
-          `${import.meta.env.VITE_LOCAL_URL}/${res?.data?.short?.shortCode}`
+          `${import.meta.env.VITE_RENDER_URL}/${res?.data?.short?.shortCode}`
         );
         setLoading(false);
       })
