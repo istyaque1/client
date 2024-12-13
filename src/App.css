@@ -10,6 +10,7 @@ body {
   font-family: "Nunito", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
+  background-color: #ecebdea4;
 }
 
 .navbar img{
@@ -42,7 +43,7 @@ body {
 .short-btn{
   display: flex;
   align-items: center;
-  background-color: #33ade6;
+  background-color: #88D66C;
   width: max-content;
   padding: 10px 20px;
   border-radius: 10px;
@@ -67,7 +68,7 @@ input{
   border: none;
   border-radius: 5px;
   outline: none;
-  background-color: #EEEDEB;
+  background-color: #d1ccc191;
   margin: 1rem 0;
   color: #181C14;
 }
@@ -87,7 +88,7 @@ input::placeholder{
 }
 
 .copy-btn button{
-  background-color: #33ade6;
+  background-color: #88D66C;
   padding: 10px 20px;
   border-radius: 10px;
   color: white;
@@ -99,7 +100,7 @@ input::placeholder{
 }
 
 .link{
-  background-color: #EEEDEB;
+  background-color: #d1ccc191;
   padding: 10px 20px;
   border-radius: 5px;
   margin-top: 1rem;

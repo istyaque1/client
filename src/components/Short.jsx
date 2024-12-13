@@ -7,21 +7,26 @@ const Short = () => {
   const [url, setUrl] = useState("");
   const [data, setData] = useState("");
   const [loading, setLoading] = useState(false);
+  const [disable, setDisable] = useState(false);
 
   const handleSubmit = (e) => {
     e.preventDefault();
     setLoading(true);
     axios
-      .post("https://server-3pp3.onrender.com/short", { url })
+      .post(`${import.meta.env.VITE_LOCAL_URL}/short`, { url })
       .then((res) => {
         setData(
-          `https://server-3pp3.onrender.com/${res?.data?.short?.shortCode}`
+          `${import.meta.env.VITE_LOCAL_URL}/${res?.data?.short?.shortCode}`
         );
         setLoading(false);
       })
       .catch((err) => {
-        if (err?.response?.data?.status === false) {
+        if (err?.status === 400 || err?.status === 404 || err?.status === 500) {
           toast.error(err?.response?.data?.message);
+          setDisable(true);
+          setTimeout(() => {
+            setDisable(false);
+          }, 3000);
         } else {
           toast.error("Too many request , please try again later");
         }
@@ -54,11 +59,16 @@ const Short = () => {
             value={url}
             onChange={(e) => setUrl(e.target.value)}
           />
-          <div className="short-btn">
+          <div className="short-btn" onClick={handleSubmit}>
             <span>
               <HiOutlineScissors />
             </span>
-            <button onClick={handleSubmit}>Shorten</button>
+            <button
+              disabled={disable}
+              style={{ cursor: `${disable ? "not-allowed" : "pointer"}` }}
+            >
+              Shorten
+            </button>
           </div>
         </div>
         {loading ? (
