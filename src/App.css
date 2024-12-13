@@ -13,12 +13,12 @@ body {
   background-color: #ecebdea4;
 }
 
-.navbar img{
+.navbar img {
   height: 30px;
   width: 30px;
 }
 
-.navbar{
+.navbar {
   display: flex;
   align-items: center;
   gap: 10px;
@@ -26,34 +26,32 @@ body {
   border-bottom: 1px solid #181c1413;
 }
 
-.short{
+.short {
   padding: 1rem;
   text-align: center;
   margin: 1rem auto;
-
 }
 
-.main-title{
+.main-title {
   text-align: center;
-  color: #181C14;
+  color: #181c14;
   margin: 1rem 0;
-
 }
 
-.short-btn{
+.short-btn {
   display: flex;
   align-items: center;
-  background-color: #88D66C;
+  background-color: #88d66c;
   width: max-content;
   padding: 10px 20px;
   border-radius: 10px;
   color: white;
-  margin: 0 auto;
+  margin: 10px auto;
   gap: 5px;
   cursor: pointer;
 }
 
-.short-btn button{
+.short-btn button {
   background-color: transparent;
   border: none;
   outline: none;
@@ -62,7 +60,7 @@ body {
   cursor: pointer;
 }
 
-input{
+input {
   font-size: 1.2rem;
   padding: 1rem 1.5rem;
   border: none;
@@ -70,25 +68,25 @@ input{
   outline: none;
   background-color: #d1ccc191;
   margin: 1rem 0;
-  color: #181C14;
+  color: #181c14;
 }
 
-input::placeholder{
+input::placeholder {
   font-size: 1rem;
 }
 
-.content{
+.content {
   display: flex;
   flex-direction: column;
   gap: 3rem;
 }
 
-.copy-btn{
+.copy-btn {
   margin-top: 1rem;
 }
 
-.copy-btn button{
-  background-color: #88D66C;
+.copy-btn button {
+  background-color: #88d66c;
   padding: 10px 20px;
   border-radius: 10px;
   color: white;
@@ -99,7 +97,7 @@ input::placeholder{
   font-size: 1.1rem;
 }
 
-.link{
+.link {
   background-color: #d1ccc191;
   padding: 10px 20px;
   border-radius: 5px;
@@ -113,19 +111,21 @@ input::placeholder{
   padding: 8px;
   aspect-ratio: 1;
   border-radius: 50%;
-  background: #181C14;
-  --_m: 
-    conic-gradient(#0000 10%,#000),
-    linear-gradient(#000 0 0) content-box;
+  background: #181c14;
+  --_m: conic-gradient(#0000 10%, #000), linear-gradient(#000 0 0) content-box;
   -webkit-mask: var(--_m);
-          mask: var(--_m);
+  mask: var(--_m);
   -webkit-mask-composite: source-out;
-          mask-composite: subtract;
+  mask-composite: subtract;
   animation: l3 1s infinite linear;
   margin: 0 auto;
 }
-@keyframes l3 {to{transform: rotate(1turn)}}
+@keyframes l3 {
+  to {
+    transform: rotate(1turn);
+  }
+}
 
-.loader-container{
+.loader-container {
   width: 100%;
 }

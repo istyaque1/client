@@ -59,6 +59,13 @@ const Short = () => {
             value={url}
             onChange={(e) => setUrl(e.target.value)}
           />
+
+          <div className="text">
+            <p style={{ color: "#181C14" }}>
+              ShortURL is a free tool for creating short, shareable links.
+              Simplify long URLs and make sharing effortless.
+            </p>
+          </div>
           <div className="short-btn" onClick={handleSubmit}>
             <span>
               <HiOutlineScissors />
